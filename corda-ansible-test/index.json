@@ -25,7 +25,9 @@
       },
       {
         "title": "Step 4",
-        "text": "step4.md"
+        "text": "step4.md",
+        "answer": "step4-answer.md",
+        "verify": "step4-verify.sh"
       },
       {
         "title": "Step 5",
