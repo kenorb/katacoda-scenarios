@@ -1,3 +1,5 @@
+Since now we've cloned Ansible role, we need the actual playbook to install Corda.
+
 ## Task
 
 Your task now is to create an Ansible playbook by the following steps:

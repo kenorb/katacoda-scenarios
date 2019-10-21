@@ -1,3 +1,5 @@
+After creation of Corda playbook, we need to execute it.
+
 ## Task
 
 Please execute newly created Ansible playbook using `ansible-playbook` command.
