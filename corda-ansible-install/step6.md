@@ -1,5 +1,7 @@
-We are almost there. We need to solve the final dependencies.
+We are almost there. Now we need to solve the final dependencies.
 
 ## Task
 
-Solve any missing dependencies and re-run playbook.
+Please solve any missing dependencies (such as Python libraries) and re-run playbook.
+
+Proceed to the next step, if the playbook has been executed without any errors.

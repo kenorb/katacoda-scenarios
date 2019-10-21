@@ -30,7 +30,7 @@
         "verify": "step4-verify.sh"
       },
       {
-        "title": "Step 5 - Provide missing variables",
+        "title": "Step 5 - Define a variable",
         "text": "step5.md",
         "answer": "step5-answer.md",
         "verify": "step5-verify.sh"
