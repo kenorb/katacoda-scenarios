@@ -1,1 +1,1 @@
-[ "$(grep IllegalArgumentException /opt/corda/logs/node-host01.log | wc -l)" -gt 2 ] && echo "done"
+[ -f "$HOME"/group_vars/all.yml ] && ansible-playbook --syntax-check "$HOME"/corda-ansible.yml && echo "done"

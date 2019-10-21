@@ -1,6 +1,9 @@
-You should run the following commands:
+Your `group_vars/vars.yml`{{open}} file should looks like:
 
-1. `systemctl status corda.service`{{execute}}
-2. `systemctl start corda.service`{{execute}}
-3. `tail /opt/corda/logs/*.log`{{execute}}
-4. `cd /opt/corda && java -jar corda.jar`{{execute}}
+<pre class="file" data-filename="group_vars/vars.yml" data-target="replace">
+---
+corda_devmode: false
+corda_password_keystore: "password"
+corda_url_doorman: "http://devnet-doorman.cordaconnect.io"
+corda_url_networkmap: "http://devnet-netmap.cordaconnect.io"
+</pre>

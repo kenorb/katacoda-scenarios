@@ -1,9 +1,7 @@
-Your `group_vars/vars.yml`{{open}} file should looks like:
+You should download the certificate file by:
 
-<pre class="file" data-filename="group_vars/vars.yml" data-target="replace">
----
-corda_devmode: false
-corda_password_keystore: "password"
-corda_url_doorman: "http://devnet-doorman.cordaconnect.io"
-corda_url_networkmap: "http://devnet-netmap.cordaconnect.io"
-</pre>
+- `wget -P /opt/corda/certificates http://devnet-doorman.cordaconnect.io/certificates/network-root-truststore.jks`{{execute}}
+
+or:
+
+- `curl -o /opt/corda/certificates/network-root-truststore.jks  http://devnet-doorman.cordaconnect.io/certificates/network-root-truststore.jks`
