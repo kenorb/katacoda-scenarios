@@ -1,1 +1,1 @@
-[ -f /opt/corda/corda.jar -a -f /etc/systemd/system/corda.service ] && echo "done"
+[ -f /opt/corda/corda.jar ] && echo "done"

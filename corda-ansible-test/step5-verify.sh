@@ -1,2 +1,1 @@
-# @fixme
-[ -f "$HOME"/corda-ansible.retry ] && echo "done"
+[ -d /opt/corda -a -f /etc/systemd/system/corda.service ] && echo "done"
