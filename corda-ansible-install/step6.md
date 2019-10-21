@@ -1,4 +1,4 @@
-We are almost there. Now we need to solve the final dependencies.
+Now we need to solve the final dependencies.
 
 ## Task
 

@@ -1,11 +1,11 @@
 Install the missing Python module by:
 
-- `pip3 install lxml`{{execute}}
+- `apt -y install python3-lxml`{{execute}}
 
 or:
 
-- `apt install python3-lxml`{{execute}}
+- `pip3 install lxml`{{execute}}
 
 Then re-run the playbook by:
 
-- `ansible-playbook corda-ansible.yml -e corda_password_keystore=somevalue`{{execute}}
+- `ansible-playbook corda-ansible.yml -e corda_password_keystore=password`{{execute}}

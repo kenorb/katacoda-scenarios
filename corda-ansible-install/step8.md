@@ -1,11 +1,10 @@
-We are almost there. We just need to make sure that Corda service is up and running correctly.
+We have now installed Corda. Now we need to configure the service.
 
 ## Task
 
-Please solve the existing Corda startup issues.
+1. Please check the status of `corda.service` service using `systemctl` command.
+2. If the service is not running, please start it, wait few seconds and check its status again.
+3. If the service is still failing, check the logs at `/opt/corda/logs`.
+4. Try to run `corda.jar` manually by navigating to `/opt/corda` and execute JAR file using `java` command (for help, run: `man java`).
 
-Here are few helpful commands:
-
-- To start Corda manually, use: `cd /opt/corda && java -jar corda.jar`.
-- To start Corda service, run: `systemctl start corda.service`
-- To check Corda options, run: `java -jar corda.jar --help`.
+Proceed to the next step, if you have identified the error (e.g. _java.lang.IllegalArgumentException_).

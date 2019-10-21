@@ -1,10 +1,17 @@
-We have now installed Corda. Please make sure the service is running.
+We have now installed Corda. Now we need to configure the service.
 
 ## Task
 
-1. Please check the status of `corda.service` service using `systemctl` command.
-2. If the service is not running, please start it, wait few seconds and check its status again.
-3. If the service is still failing, check the logs at `/opt/corda/logs`.
-4. Try to run `corda.jar` manually by navigating to `/opt/corda` and execute JAR file using `java` command (for help, run: `man java`).
+1. Create a new file called `group_vars/all.yml`{{open}} for site-wide defaults.
+2. Append the following variables into `groups_vars/all.yml`{{open}} file.
 
-Proceed to the next step, if you have identified the error (e.g. _java.lang.IllegalArgumentException_).
+   - Set `corda_devmode` to `false`.
+   - Set `corda_password_keystore` to `password`.
+   - Set `corda_url_doorman` to `http://devnet-doorman.cordaconnect.io`.
+   - Set `corda_url_networkmap` to `http://devnet-netmap.cordaconnect.io`.
+
+3. Re-run playbook with `--diff` and `-e corda_initial_registration=true` parameters.
+
+Documentation:
+
+- <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html>
