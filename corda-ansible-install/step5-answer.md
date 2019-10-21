@@ -10,7 +10,7 @@ Open (click to open) `corda-ansible/defaults/main.yml`{{open}} file and rename *
 
 For example:
 
-- `sed -i'' s/corda_password_key_store/corda_password_keystore/ corda-ansible/defaults/main.yml`
+- `sed -i'' s/corda_password_key_store/corda_password_keystore/ corda-ansible/defaults/main.yml`{{execute}}
 
 Run the playbook by:
 
