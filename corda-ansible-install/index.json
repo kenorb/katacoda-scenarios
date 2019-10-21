@@ -1,8 +1,8 @@
 {
-  "title": "Corda Ansible Test",
-  "description": "Corda Ansible Test",
+  "title": "Install Corda using Ansible",
+  "description": "This scenario provides a minimal set of steps required to install Corda on a Linux machine",
   "difficulty": "Beginner",
-  "time": "10",
+  "time": "5-10 minutes",
   "details": {
     "steps": [
       {
