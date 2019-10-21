@@ -10,7 +10,7 @@ This scenario consist the following steps:
 6. Solving the missing Python dependencies.
 7. Getting network-root-truststore certificate.
 8. Creating site-wide defaults.
-9. Checking Corda service.
-10. Solving Corda startup issues.
+9. Registering Corda node.
+10. Verifying Corda service is up-and-running.
 
 At the end, you should have Corda installed on Linux machine.

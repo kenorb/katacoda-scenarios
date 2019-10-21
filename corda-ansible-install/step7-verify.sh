@@ -1,1 +1,1 @@
-[ -f /opt/corda/certificates/network-root-truststore.jks ] && echo "done"
+[ -f /root/files/network-root-truststore.jks ] && echo "done"

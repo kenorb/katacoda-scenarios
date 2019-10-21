@@ -13,4 +13,10 @@ Documentation:
 - <https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html#basics>
 - <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>
 
-After creating a playbook file, proceed to the next step.
+## Verify
+
+You can verify your playbook file by the following command:
+
+- `ansible-playbook --syntax-check corda-ansible.yml`{{execute}}
+
+After you have created a working playbook file, proceed to the next step.
