@@ -4,21 +4,21 @@ We have now installed Corda. Now we need to configure the service.
 
 1. Navigate to your home dir and create a `group_vars`{{copy}} directory.
 2. Then create a new file called `group_vars/all.yml`{{open}} for site-wide defaults.
-3. Append the following variables into `group_vars/all.yml`{{open}} file.
+3. Copy the following variables to `group_vars/all.yml`{{open}} file:
 
     <pre class="file" data-filename="/root/group_vars/all.yml" data-target="replace">
     corda_devmode: "false"
     corda_local_path: "files"
-    corda_name_org: "ChangeMe" # Change this please!
+    corda_name_org: "CordaDev-yyyymmdd-01" # CHANGE this please!
     corda_password_keystore: "password"
     corda_url_doorman: "http://devnet-doorman.cordaconnect.io"
     corda_url_networkmap: "http://devnet-netmap.cordaconnect.io"
     corda_version: 3.4
     </pre>
 
-4. Re-run playbook with `--diff`{{copy}} and `-e corda_initial_registration=true`{{copy}} and `-v`{{copy}} parameters.
+4. Re-run `corda-ansible.yml`{{copy}} playbook with `--diff`{{copy}} and `-e corda_initial_registration=true`{{copy}} and `-v`{{copy}} parameters.
 5. Start the Corda service using `systemctl`{{copy}} command.
-6. Verify the presense of the `/opt/corda/network-parameters`{{copy}} (which should be downloaded upon starting the Corda node).
+6. Verify existence of the `/opt/corda/network-parameters`{{copy}} (should be fetched upon Corda node initial registration).
 
 ## Documentation
 
@@ -52,7 +52,7 @@ We have now installed Corda. Now we need to configure the service.
 
 1. Make sure a keystore password in `corda_password_keystore` variable is correct.
 2. You can use `keytool` to open `network-root-truststore.jks` independently, e.g. `keytool -list -keystore /opt/corda/certificates/network-root-truststore.jks`{{execute}}
-3. Make sure to remove other key store files, before registering the node again.
+3. Make sure to remove other key store files from Corda's `certificates/`{{copy}} folder, before registering the node again.
 
 ### Register With The Identity Manager (Ansible)
 
@@ -67,6 +67,10 @@ To register the node with IM (Doorman) manually, run:
 - `java -jar corda.jar --initial-registration --network-root-truststore-password password`{{execute}}.
 
 It's the last step of `corda-ansible/tasks/main.yml`{{open}} playbook.
+
+### Check the logs
+
+Check the node's log file by: `tail /opt/corda/logs/*.log`{{execute}}.
 
 ## Verify
 

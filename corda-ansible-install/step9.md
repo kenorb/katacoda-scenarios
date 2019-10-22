@@ -9,7 +9,7 @@ In case the service fails to start, please troubleshoot the issue.
 
 ## Documentation
 
-- <https://docs.cenm.r3.com/setting-up-notary.html?highlight=initial%20registration>
+- <https://docs.cenm.r3.com/setting-up-notary.html>
 
 ## Troubleshooting
 
