@@ -56,7 +56,8 @@
       {
         "title": "Step 9 - Starting the Corda service and troubleshooting",
         "text": "step9.md",
-        "answer": "step9-answer.md"
+        "answer": "step9-answer.md",
+        "verify": "step9-verify.sh"
       },
       {
         "title": "Step 10 - Upgrading Corda node and starting the service",
