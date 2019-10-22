@@ -18,6 +18,7 @@ We have now installed Corda. Now we need to configure the service.
 
 4. Re-run playbook with `--diff`{{copy}} and `-e corda_initial_registration=true`{{copy}} and `-v`{{copy}} parameters.
 5. Start the Corda service using `systemctl`{{copy}} command.
+6. Verify the presense of the `/opt/corda/network-parameters`{{copy}} (which should be downloaded upon starting the Corda node).
 
 ## Documentation
 
