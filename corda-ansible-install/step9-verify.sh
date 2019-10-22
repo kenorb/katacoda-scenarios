@@ -1,1 +1,1 @@
-[ "$(grep IllegalArgumentException /opt/corda/logs/node-host01.log | wc -l)" -gt 2 ] && echo "done"
+(systemctl status corda.service || grep java.lang.IllegalStateException /opt/corda/logs/node-host01.log) && echo "done"

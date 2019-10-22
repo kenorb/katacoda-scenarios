@@ -5,9 +5,11 @@
     <pre class="file" data-filename="/root/group_vars/all.yml" data-target="replace">
     corda_devmode: "false"
     corda_local_path: "files"
+    corda_name_org: "ChangeMe"
     corda_password_keystore: "password"
     corda_url_doorman: "http://devnet-doorman.cordaconnect.io"
     corda_url_networkmap: "http://devnet-netmap.cordaconnect.io"
+    corda_version: 3.4
     </pre>
 
 4. Navigate to your home dir by: `cd`{{execute}}

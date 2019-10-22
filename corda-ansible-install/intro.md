@@ -9,7 +9,8 @@ This scenario consist the following steps:
 5. Defining variables in a playbook
 6. Solving the missing Python dependencies.
 7. Downloading network-root-truststore certificate.
-8. Creating site-wide defaults.
-9. Verifying Corda service is up-and-running.
+8. Creating site-wide defaults and registering the node.
+9. Starting the Corda service and troubleshooting.
+9. Upgrading Corda node and starting the service.
 
-At the end, you should have Corda installed on Linux machine.
+At the end, you should have Corda installed and running on Linux machine.

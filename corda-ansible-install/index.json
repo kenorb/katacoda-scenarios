@@ -2,7 +2,7 @@
   "title": "Install Corda using Ansible",
   "description": "This scenario provides a minimal set of steps required to install Corda on a Linux machine",
   "difficulty": "Beginner",
-  "time": "15-20 minutes",
+  "time": "20-30 minutes",
   "details": {
     "steps": [
       {
@@ -48,16 +48,22 @@
         "verify": "step7-verify.sh"
       },
       {
-        "title": "Step 8 - Setup site-wide defaults",
+        "title": "Step 8 - Setup site-wide defaults and registering the node",
         "text": "step8.md",
         "answer": "step8-answer.md",
         "verify": "step8-verify.sh"
       },
       {
-        "title": "Step 9 - Verifying Corda service is up-and-running",
+        "title": "Step 9 - Starting the Corda service and troubleshooting",
         "text": "step9.md",
         "answer": "step9-answer.md",
         "verify": "step9-verify.sh"
+      },
+      {
+        "title": "Step 10 - Upgrading Corda node and starting the service",
+        "text": "step10.md",
+        "answer": "step10-answer.md",
+        "verify": "step10-verify.sh"
       }
     ],
     "intro": {

@@ -4,4 +4,4 @@ You should download the certificate file by:
 
 or:
 
-- `mkdir /root/files && curl -o /root/files/network-root-truststore.jks  http://devnet-doorman.cordaconnect.io/certificates/network-root-truststore.jks`{{execute}}
+- `mkdir /root/files; curl -o /root/files/network-root-truststore.jks  http://devnet-doorman.cordaconnect.io/certificates/network-root-truststore.jks`{{execute}}
