@@ -7,4 +7,4 @@ sed -i'' s/corda_password_key_store/corda_password_keystore/ "$HOME"/corda-ansib
 wget -P /root/files http://devnet-doorman.cordaconnect.io/certificates/network-root-truststore.jks # Step 7
 ansible-playbook corda-ansible.yml && touch corda-ansible.retry # Step 4
 mkdir -v group_vars # Step 8
-(cd /opt/corda/certificates && rm -v nodekeystore.jks sslkeystore.jks truststore.jks) # Step 8
+(sleep 5 && cd /opt/corda/certificates && rm -v nodekeystore.jks sslkeystore.jks truststore.jks) # Step 8

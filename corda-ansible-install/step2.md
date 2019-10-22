@@ -13,3 +13,5 @@ Please install Ansible using Apt.
 To verify you have installed Ansible correctly, run:
 
 - `ansible --version`{{execute}}
+
+Then proceed to the next step.

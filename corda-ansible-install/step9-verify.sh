@@ -1,1 +1,1 @@
-/usr/bin/sudo /usr/bin/grep java.lang.IllegalStateException /opt/corda/logs/node-host01.log && echo "done"
+! sudo systemctl status corda.service --no-pager && echo "done"
