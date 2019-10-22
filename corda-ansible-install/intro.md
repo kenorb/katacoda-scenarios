@@ -8,9 +8,8 @@ This scenario consist the following steps:
 4. Executing of Ansible playbook.
 5. Defining variables in a playbook
 6. Solving the missing Python dependencies.
-7. Getting network-root-truststore certificate.
+7. Downloading network-root-truststore certificate.
 8. Creating site-wide defaults.
-9. Registering Corda node.
-10. Verifying Corda service is up-and-running.
+9. Verifying Corda service is up-and-running.
 
 At the end, you should have Corda installed on Linux machine.

@@ -6,3 +6,7 @@ Your `corda-ansible.yml`{{open}} file should looks like:
   roles:
   - role: './corda-ansible'
 </pre>
+
+You can create it using the following command:
+
+- `printf -- "---\n- hosts: localhost\n  roles:\n  - role: ./corda-ansible" > "$HOME"/corda-ansible.yml`{{execute}}
