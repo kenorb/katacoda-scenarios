@@ -17,6 +17,7 @@ We have now installed Corda. Now we need to configure the service.
     </pre>
 
 4. Re-run playbook with `--diff`{{copy}} and `-e corda_initial_registration=true`{{copy}} and `-v`{{copy}} parameters.
+5. Start the Corda service using `systemctl`{{copy}} command.
 
 ## Documentation
 
@@ -46,6 +47,12 @@ We have now installed Corda. Now we need to configure the service.
 2. Remove key store certificate files (as mentioned above).
 3. Try re-registering your node again.
 
+> _java.io.IOException_: Keystore was tampered with, or password was incorrect
+
+1. Make sure a keystore password in `corda_password_keystore` variable is correct.
+2. You can use `keytool` to open `network-root-truststore.jks` independently, e.g. `keytool -list -keystore /opt/corda/certificates/network-root-truststore.jks`{{execute}}
+3. Make sure to remove other key store files, before registering the node again.
+
 ### Register With The Identity Manager (Ansible)
 
 To update configuration and register the node with IM (Doorman), run:
@@ -70,4 +77,4 @@ After successful run of the playbook, in the last lines of play ("Register node"
 
 > Corda node will now terminate.
 
-If you don't, you should revise your configuration.
+After successful registration with IM and running the service, the new `/opt/corda/network-parameters`{{copy}} file should be created with the node's network parameters. Otherwise, please revise your configuration.

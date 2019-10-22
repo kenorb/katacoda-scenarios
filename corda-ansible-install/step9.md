@@ -2,8 +2,8 @@ We have now registered Corda node. Now we need to start the service.
 
 ## Task
 
-1. Start the Corda service (`corda.service`{{copy}}) using `systemctl`{{copy}} command.
-2. Check the status of Corda service using `systemctl`{{copy}} command.
+1. Check the status of Corda service using `systemctl`{{copy}} command.
+2. Start or restart the Corda service (`corda.service`{{copy}}) using `systemctl`{{copy}} command.
 
 In case the service fails to start, please troubleshoot the issue.
 

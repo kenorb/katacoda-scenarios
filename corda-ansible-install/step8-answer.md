@@ -14,6 +14,7 @@
 
 4. Navigate to your home dir by: `cd`{{execute}}
 5. Re-run playbook by: `ansible-playbook corda-ansible.yml --diff -e corda_initial_registration=true -v`{{execute}}
+6. Start the Corda service by: `systemctl start corda.service`{{execute}}
 
 ## Troubleshooting
 
