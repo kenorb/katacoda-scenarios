@@ -7,3 +7,7 @@ Please download the certificate file from the following URL:
 - <http://devnet-doorman.cordaconnect.io/certificates/network-root-truststore.jks>
 
 and place it under `/root/files`{{copy}} folder (create a new folder if required).
+
+This certificate is required by the Ansible's role.
+
+After you have downloaded the certificate file, please proceed to the next step.

@@ -1,1 +1,1 @@
-systemctl status corda.service && echo "done"
+systemctl status corda.service --no-pager && echo "done"

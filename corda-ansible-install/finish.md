@@ -1,1 +1,1 @@
-You have successfully installed Corda using Ansible.
+You have successfully installed and run Corda using Ansible.

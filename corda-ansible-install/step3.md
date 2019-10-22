@@ -8,7 +8,7 @@ Your task now is to create an Ansible playbook using the following steps:
 2. Define `localhost` as your host.
 3. Define `./corda-ansible` local folder as your role.
 
-Documentation:
+## Documentation
 
 - <https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html#basics>
 - <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>

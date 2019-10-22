@@ -13,4 +13,6 @@ This scenario consist the following steps:
 9. Starting the Corda service and troubleshooting.
 9. Upgrading Corda node and starting the service.
 
+You require some basic Ansible and Linux command-line knowledge.
+
 At the end, you should have Corda installed and running on Linux machine.
