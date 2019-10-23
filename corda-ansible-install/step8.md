@@ -20,6 +20,20 @@ We have now installed Corda. Now we need to configure the service.
 5. Start the Corda service using `systemctl`{{copy}} command.
 6. Verify existence of the `/opt/corda/network-parameters`{{copy}} (should be fetched upon Corda node initial registration).
 
+## Expected outcome
+
+After successful run of the playbook, in the last lines of play ("Register node" section), you should see the following yello message (in yellow color):
+
+> Registering as a new participant with Corda network
+
+> Successfully registered Corda node with compatibility zone
+
+> Corda node will now terminate.
+
+Also, after successful registration with the IM and running the service, you should see the new created file at `/opt/corda/network-parameters`{{copy}} containing the node's network parameters.
+
+If you see the red error instead, please revise your configuration.
+
 ## Documentation
 
 - <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html>
@@ -77,17 +91,3 @@ It's the last step of `corda-ansible/tasks/main.yml`{{open}} playbook.
 ### Check the logs
 
 Check the node's log file by: `tail /opt/corda/logs/*.log`{{execute}}.
-
-## Expected outcome
-
-After successful run of the playbook, in the last lines of play ("Register node" section), you should see the following yello message (in yellow color):
-
-> Registering as a new participant with Corda network
-
-> Successfully registered Corda node with compatibility zone
-
-> Corda node will now terminate.
-
-Also, after successful registration with the IM and running the service, you should see the new created file at `/opt/corda/network-parameters`{{copy}} containing the node's network parameters.
-
-If you see the red error instead, please revise your configuration.

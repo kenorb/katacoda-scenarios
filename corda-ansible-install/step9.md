@@ -7,6 +7,20 @@ We have now registered Corda node. Now we need to start the service.
 
 In case the service fails to start, please troubleshoot the issue.
 
+### Run playbook
+
+After updating Ansible configuration, you may want to re-run your playbook again by:
+
+- `ansible-playbook corda-ansible.yml`{{execute}}.
+
+## Expected outcome
+
+After running the Corda service, you should see the following error:
+
+> Node's platform version is lower than network's required minimumPlatformVersion
+
+If so, please proceed to the next step.
+
 ## Documentation
 
 - <https://docs.cenm.r3.com/setting-up-notary.html>
@@ -22,18 +36,4 @@ In case the service fails to start, please troubleshoot the issue.
 
 > _java.lang.IllegalStateException_: Node's platform version is lower than network's required minimumPlatformVersion
 
-Please proceed to the next step.
-
-### Run playbook
-
-After updating Ansible configuration, you may want to re-run your playbook again by:
-
-- `ansible-playbook corda-ansible.yml`{{execute}}.
-
-## Expected outcome
-
-After running the Corda service, you should see the following error:
-
-> Node's platform version is lower than network's required minimumPlatformVersion
-
-If so, please proceed to the next step.
+This error is expected at this point. Please proceed to the next step for futher instructions.

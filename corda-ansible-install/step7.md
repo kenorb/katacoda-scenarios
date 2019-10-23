@@ -1,4 +1,4 @@
-We have now installed Corda. Now we need to download the _network-root-truststore_ certificate.
+You have now installed Corda. Now you need to download the _network-root-truststore_ certificate.
 
 ## Task
 

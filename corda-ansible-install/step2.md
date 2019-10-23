@@ -4,10 +4,6 @@ We need Ansible to install Corda on a Linux machine.
 
 Please install Ansible using Apt.
 
-## Documentation
-
-- <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html>
-
 ## Expected outcome
 
 To verify you have installed Ansible correctly, run:
@@ -15,3 +11,7 @@ To verify you have installed Ansible correctly, run:
 - `ansible --version`{{execute}}
 
 Then proceed to the next step.
+
+## Documentation
+
+- <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html>
