@@ -35,18 +35,24 @@ We have now installed Corda. Now we need to configure the service.
 1. Make sure to remove `nodekeystore.jks`{{copy}}, `sslkeystore.jks`{{copy}} and `truststore.jks`{{copy}} files from `/opt/corda/certificates`{{copy}}.
 2. Re-run the registration of the node.
 
+---
+
 > Certificate signing request has been rejected: Rejection reason code: 2.
 
 > Description: Duplicate legal name.
 
-1. Change the value for `corda_name_org` to something else.
+1. Change the value of `corda_name_org` variable to something else.
 2. Re-run the registration of the node.
+
+---
 
 > _java.lang.IllegalArgumentException_: Couldn't find network parameters file and compatibility zone wasn't configured/isn't reachable
 
 1. Make sure `/opt/corda/certificates/network-root-truststore.jks`{{copy}} file is present.
 2. Remove key store certificate files (as mentioned above).
 3. Try re-registering your node again.
+
+---
 
 > _java.io.IOException_: Keystore was tampered with, or password was incorrect
 
@@ -72,9 +78,9 @@ It's the last step of `corda-ansible/tasks/main.yml`{{open}} playbook.
 
 Check the node's log file by: `tail /opt/corda/logs/*.log`{{execute}}.
 
-## Verify
+## Expected outcome
 
-After successful run of the playbook, in the last lines of play ("Register node" section), you should see the following message (in yellow color):
+After successful run of the playbook, in the last lines of play ("Register node" section), you should see the following yello message (in yellow color):
 
 > Registering as a new participant with Corda network
 
@@ -82,4 +88,6 @@ After successful run of the playbook, in the last lines of play ("Register node"
 
 > Corda node will now terminate.
 
-After successful registration with IM and running the service, the new `/opt/corda/network-parameters`{{copy}} file should be created with the node's network parameters. Otherwise, please revise your configuration.
+Also, after successful registration with the IM and running the service, you should see the new created file at `/opt/corda/network-parameters`{{copy}} containing the node's network parameters.
+
+If you see the red error instead, please revise your configuration.

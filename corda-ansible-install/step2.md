@@ -8,7 +8,7 @@ Please install Ansible using Apt.
 
 - <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html>
 
-## Verify
+## Expected outcome
 
 To verify you have installed Ansible correctly, run:
 

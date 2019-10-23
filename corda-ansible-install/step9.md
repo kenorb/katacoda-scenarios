@@ -29,3 +29,11 @@ Please proceed to the next step.
 After updating Ansible configuration, you may want to re-run your playbook again by:
 
 - `ansible-playbook corda-ansible.yml`{{execute}}.
+
+## Expected outcome
+
+After running the Corda service, you should see the following error:
+
+> Node's platform version is lower than network's required minimumPlatformVersion
+
+If so, please proceed to the next step.

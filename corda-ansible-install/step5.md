@@ -8,6 +8,6 @@ Please define `corda_password_keystore` variable and set to `password` and re-ru
 
 - <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html>
 
-## Verify
+## Expected outcome
 
-Proceed to the next step, if you see the red error about missing Python library after running the playbook.
+You should see the red error about missing Python library after running the playbook. If so, proceed to the next step.

@@ -10,4 +10,6 @@ and place it under `/root/files`{{copy}} folder (create a new folder if required
 
 This certificate is required by the Ansible's role.
 
-After you have downloaded the certificate file, please proceed to the next step.
+## Expected outcome
+
+After you have downloaded the certificate file into the right location, please proceed to the next step.

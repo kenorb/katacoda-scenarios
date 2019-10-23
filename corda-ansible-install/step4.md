@@ -8,6 +8,6 @@ Please execute newly created Ansible playbook using `ansible-playbook` command.
 
 - <https://docs.ansible.com/ansible/latest/network/getting_started/first_playbook.html>
 
-## Verify
+## Expected outcome
 
-After execution, you should see the red assertion message about missing variable. If so, please proceed to the next step.
+After execution of playbook, you should see the red assertion message about missing password variable. If so, please proceed to the next step.

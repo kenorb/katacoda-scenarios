@@ -1,7 +1,7 @@
 You should perform the following steps:
 
 1. To upgrade Corda node, edit your `group_vars/all.yml`{{open}} and change _corda_version_ to _4.1_.
-2. Re-run playbook by: `cd; ansible-playbook corda-ansible.yml`{{execute}}.
+2. Re-run playbook by: `cd; ansible-playbook corda-ansible.yml -v`{{execute}}.
 3. Check the service status by: `systemctl status corda.service --no-pager`{{execute}}.
 
 ## Troubleshooting
