@@ -1,6 +1,6 @@
-In this scenario you will learn how to install Corda using Ansible with a minimal set of steps.
+In this scenario you will learn how to install and run Corda using Ansible with a minimal set of steps.
 
-This scenario consist the following steps:
+It consist the following steps:
 
 1. Cloning the Corda repository containing Ansible role.
 2. Installing Ansible using Apt.
@@ -11,7 +11,7 @@ This scenario consist the following steps:
 7. Downloading network-root-truststore certificate.
 8. Creating site-wide defaults and registering the node.
 9. Starting the Corda service and troubleshooting.
-9. Upgrading Corda node and starting the service.
+10. Upgrading Corda node and starting the service.
 
 You require some basic Ansible and Linux command-line knowledge.
 
