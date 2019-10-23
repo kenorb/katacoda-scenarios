@@ -20,11 +20,11 @@ Check the latest version at <https://search.maven.org/artifact/net.corda/corda>
 > Failed to download artifact net.corda:corda:4.1-corda: HTTP Error 404
 
 1. Verify the specified version and URL.
-2. Check code at `corda-ansible/tasks/source_maven.yml`{{copy}} for any clues.
+2. Check code at `corda-ansible/tasks/source_maven.yml`{{open}} for any clues.
 3. Verify path at Maven repository at <http://repo1.maven.org/maven2/net/corda/corda/>.
 
 ## Expected outcome
 
-After successful upgrade, your node should be up-and-running. To verify, please run:
+After successful upgrade, your node should be up-and-running. To verify, check its status by:
 
 - `systemctl status corda.service --no-pager`{{execute}}
