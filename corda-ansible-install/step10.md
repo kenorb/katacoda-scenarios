@@ -1,4 +1,6 @@
-Our compatibility zone requires Corda nodes to be at least 4.0+.
+As per logs, our compatibility zone requires Corda nodes to be at least 4.0+. Therefore we need to upgrade our Corda node.
+
+This is the final step.
 
 ## Task
 
@@ -23,7 +25,7 @@ To verify your node is started up and registered, run:
 
 - `systemctl status corda.service --no-pager`{{execute}}
 
-Please also verify that your node is listening on port 10002, before proceeding to the next step.
+Please also verify that your node is listening on port 10002, before completing this final step.
 
 ## Common errors
 
