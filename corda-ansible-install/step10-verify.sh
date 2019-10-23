@@ -1,1 +1,1 @@
-sudo systemctl status corda.service --no-pager && echo "done"
+</dev/tcp/localhost/10002 && echo "done"
