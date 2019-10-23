@@ -77,6 +77,10 @@
         {
           "file": "steps-1-7.sh",
           "target": "/tmp"
+        },
+        {
+          "file": "step-8.sh",
+          "target": "/tmp"
         }
       ]
     }
