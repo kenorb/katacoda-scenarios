@@ -1,8 +1,8 @@
 {
   "title": "Install Corda using Ansible",
   "description": "This scenario provides a minimal set of steps required to install Corda on a Linux machine",
-  "difficulty": "Beginner",
-  "time": "20-30 minutes",
+  "difficulty": "Advanced",
+  "time": "20-40 minutes",
   "details": {
     "steps": [
       {

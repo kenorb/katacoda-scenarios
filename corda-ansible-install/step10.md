@@ -1,4 +1,4 @@
-As per logs, our compatibility zone requires Corda nodes to be at least 4.0+. Therefore we need to upgrade our Corda node.
+Our compatibility zone requires Corda node to be at least 4.0+. So we need to perform the upgrade.
 
 This is the final step.
 
@@ -10,12 +10,13 @@ Check the latest version at <https://search.maven.org/artifact/net.corda/corda>
 
 ## Useful commands
 
-- To check Corda version, run: `cd /opt/corda && java -jar corda.jar --version`{{execute}}
-- To start Corda node, run: `cd /opt/corda && java -jar corda.jar`{{execute}}
-- To check Corda options, run: `java -jar corda.jar --help`{{execute}}
-- To start Corda service, run: `systemctl start corda.service --no-pager`{{execute}}
-- To stop Corda service, run: `systemctl stop corda.service --no-pager`{{execute}}
-- To check Corda service, run: `systemctl status corda.service --no-pager`{{execute}}
+- Run playbook: `(cd; ansible-playbook corda-ansible.yml -v)`{{execute}}
+- Check Corda version: `(cd /opt/corda; java -jar corda.jar --version)`{{execute}}
+- Start Corda node: `(cd /opt/corda; java -jar corda.jar)`{{execute}}
+- Check Corda options: `(cd /opt/corda; java -jar corda.jar --help)`{{execute}}
+- Start Corda service: `systemctl start corda.service --no-pager`{{execute}}
+- Stop Corda service: `systemctl stop corda.service --no-pager`{{execute}}
+- Check Corda service: `systemctl status corda.service --no-pager`{{execute}}
 
 ## Expected outcome
 
