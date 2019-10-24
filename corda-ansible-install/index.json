@@ -68,7 +68,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "intro.sh"
+      "courseData": "courseData.sh"
     },
     "finish": {
       "text": "finish.md"
