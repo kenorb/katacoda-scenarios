@@ -36,4 +36,4 @@ If so, please proceed to the next step.
 
 > _java.lang.IllegalStateException_: Node's platform version is lower than network's required minimumPlatformVersion
 
-This error is expected at this point. Please proceed to the next step for futher instructions.
+This error is expected at this point. Please proceed to the next step for further instructions.

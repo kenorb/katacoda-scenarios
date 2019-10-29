@@ -1,4 +1,4 @@
-You have now installed Corda. Now you need to download the _network-root-truststore_ certificate.
+You have now installed Corda. Now you need to download the _network-root-truststore_ certificatestore.
 
 ## Task
 
@@ -8,8 +8,8 @@ Please download the certificate file from the following URL:
 
 and place it under `/root/files`{{copy}} folder (create a new folder if required).
 
-This certificate is required by the Ansible's role.
+This certificate is required by the Ansible role.
 
 ## Expected outcome
 
-After you have downloaded the certificate file into the right location, please proceed to the next step.
+After you have downloaded the certificatestore file into the correct location, please proceed to the next step.

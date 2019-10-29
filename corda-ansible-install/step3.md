@@ -1,4 +1,4 @@
-After downloading Ansible role, we need the actual playbook to install Corda.
+After downloading the Ansible role, we need an actual playbook to install Corda.
 
 ## Task
 
