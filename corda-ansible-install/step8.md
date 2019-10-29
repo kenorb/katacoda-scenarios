@@ -1,4 +1,4 @@
-We have now installed Corda. Now we need to configure the service.
+We have now have the certificatestore needed by Corda. Now we need to configure the service.
 
 ## Task
 
@@ -22,7 +22,7 @@ We have now installed Corda. Now we need to configure the service.
 
 ## Expected outcome
 
-After successful run of the playbook, in the last lines of play ("Register node" section), you should see the following yello message (in yellow color):
+After successful run of the playbook, in the last lines of play ("Register node" section), you should see the following message in yellow text:
 
 > Registering as a new participant with Corda network
 

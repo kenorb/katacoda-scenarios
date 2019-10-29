@@ -6,4 +6,6 @@ Your first task is to clone the following Git repository into the current folder
 
 - <https://github.com/corda/corda-ansible>
 
+You do not need to configure your git client.
+
 After you have cloned the repository, please proceed to the next step.
