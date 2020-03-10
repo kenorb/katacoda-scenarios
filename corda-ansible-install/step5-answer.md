@@ -8,7 +8,7 @@ You should run the playbook by:
 
 Edit `corda-ansible.yml`{{open}} and add `corda_password_keystore: "password"` under `vars` section, so your file looks like:
 
-<pre class="file" data-filename="/root/group_vars/all.yml" data-target="replace">
+<pre class="file" data-filename="/root/corda-ansible.yml" data-target="replace">
 ---
 - hosts: localhost
   roles:
