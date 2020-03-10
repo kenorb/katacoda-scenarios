@@ -4,7 +4,7 @@ This is the final step.
 
 ## Task
 
-Please upgrade Corda node to its latest version by modifying your Ansible configuration, then re-run the playbook.
+Please upgrade Corda node to its latest version by modifying your Ansible configuration (the relevant variable), then re-run the playbook.
 
 Check the latest version at <https://search.maven.org/artifact/net.corda/corda>
 
@@ -35,6 +35,10 @@ Please also verify that your node is listening on port 10002, before completing 
 1. Verify the specified version and URL.
 2. Check code at `corda-ansible/tasks/source_maven.yml`{{open}} for any clues.
 3. Verify path at Maven repository at <http://repo1.maven.org/maven2/net/corda/corda/>.
+
+> java.lang.IllegalStateException: Node's platform version is lower than network's required
+
+If the version hasn't been upgraded despite running the playbook, as for the workaround, consider removing JAR file manually and re-run the playbook again.
 
 ## Documentation
 

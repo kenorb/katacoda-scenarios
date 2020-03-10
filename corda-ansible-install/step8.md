@@ -16,9 +16,10 @@ We have now have the certificatestore needed by Corda. Now we need to configure 
     corda_version: 3.4
     </pre>
 
-4. Re-run `corda-ansible.yml`{{copy}} playbook with `--diff`{{copy}} and `-e corda_initial_registration=true`{{copy}} and `-v`{{copy}} parameters.
-5. Start the Corda service using `systemctl`{{copy}} command.
-6. Verify existence of the `/opt/corda/network-parameters`{{copy}} (should be fetched upon Corda node initial registration).
+4. Please update `corda_name_org` to consist the current date (to avoid registration identity conflict).
+5. Re-run `corda-ansible.yml`{{copy}} playbook with `--diff`{{copy}} and `-e corda_initial_registration=true`{{copy}} and `-v`{{copy}} parameters.
+6. Start the Corda service using `systemctl`{{copy}} command.
+7. Verify existence of the `/opt/corda/network-parameters`{{copy}} (should be fetched upon Corda node initial registration).
 
 ## Expected outcome
 
@@ -46,8 +47,9 @@ If you see the red error instead, please revise your configuration.
 
 > _net.corda.node.internal.ConfigurationException_: The name 'O=..., L=...' for identity doesn't match what's in the key store.
 
-1. Make sure to remove `nodekeystore.jks`{{copy}}, `sslkeystore.jks`{{copy}} and `truststore.jks`{{copy}} files from `/opt/corda/certificates`{{copy}}.
-2. Re-run the registration of the node.
+1. Please change `corda_name_org` to have a different identity name (to avoid registration conflict).
+2. After that please remove `nodekeystore.jks`{{copy}}, `sslkeystore.jks`{{copy}} and `truststore.jks`{{copy}} files from `/opt/corda/certificates`{{copy}}.
+3. Re-run the registration of the node.
 
 ---
 
