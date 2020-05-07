@@ -1,8 +1,8 @@
-We need Ansible to install Corda on a Linux machine.
+We need the latest Ansible to install Corda on a Linux machine.
 
 ## Task
 
-Please install Ansible using Pip.
+Please install Ansible using Pip command.
 
 ## Expected outcome
 
