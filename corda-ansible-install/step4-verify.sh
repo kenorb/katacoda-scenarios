@@ -1,1 +1,1 @@
-[ -f "$HOME"/corda-ansible.retry ] && echo "done"
+ansible-playbook --syntax-check "$HOME"/corda-ansible.yml && echo "done"
